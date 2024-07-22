@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "accent-1" : "#FD5E2B",
+        "accent-2" : "#FE303D",
+        "bg-primary" : "#FEFEF2",
+        "bg-secondary" : "#D9D5C5",
+        "text-primary" : "#4B4A48",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)", "sans-serif"],
+        rubik: ["var(--font-rubik)", "serif"],
       },
     },
   },
